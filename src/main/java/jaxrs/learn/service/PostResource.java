@@ -88,6 +88,8 @@ public class PostResource {
 	@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
 	public Employee saveEmployee(Employee employee) {
 		
+		employee.setId(50);
+		
 		return employee;
 	}
 }
